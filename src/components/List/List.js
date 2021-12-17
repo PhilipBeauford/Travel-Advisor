@@ -41,7 +41,7 @@ const List = ({ places, type, setType, rating, setRating, childClicked, isLoadin
           <Grid container spacing={3} className={classes.list}>
             {places?.map((place, i) => (
               <Grid ref={elRefs[i]} key={i} item xs={12}>
-                <PlaceDetails selected={Number(childClicked) === i} refProp={elRefs[i]} place={place} />
+                <PlaceDetails selected={Number(childClicked) === i} refProp={elRefs[i]} place={place.name} />
               </Grid>
             ))}
           </Grid>
