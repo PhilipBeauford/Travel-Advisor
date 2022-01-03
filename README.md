@@ -8,8 +8,7 @@ Travel Companion App using Google Maps & Rapid API. With Geolocation, Google Map
 - Advanced React Best Practices such as folder & file structure, hooks and refs
 - Creating a User Interface using Material UI
 - Working with Google Maps API
-- And most importantly fetching data from unlimited sources using RapidAPI
-- Essentially, you'll become the master of working with APIs
+- Fetching data from unlimited sources using RapidAPI
 
 [RapidAPI](https://rapidapi.com/hub)
 [Travel Advisor API](https://rapidapi.com/apidojo/api/travel-advisor)
