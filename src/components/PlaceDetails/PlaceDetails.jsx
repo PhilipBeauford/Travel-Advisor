@@ -3,7 +3,6 @@ import { Box, Typography, Button, Card, CardMedia, CardContent, CardActions, Chi
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/Phone';
 import Rating from '@material-ui/lab/Rating';
-
 import useStyles from './styles.js';
 
 const PlaceDetails = ({ place, selected, refProp }) => {
@@ -55,6 +54,7 @@ const PlaceDetails = ({ place, selected, refProp }) => {
           </Typography>
         )}
       </CardContent>
+
       <CardActions>
         <Button size="small" color="primary" onClick={() => window.open(place.web_url, '_blank')}>
           Trip Advisor

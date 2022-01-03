@@ -1,7 +1,6 @@
 /* eslint-disable consistent-return */
 import axios from 'axios';
 
-
 export const getPlacesData = async (type, sw, ne) => {
   try {
     const { data: { data } } = await axios.get(`https://travel-advisor.p.rapidapi.com/${type}/list-in-boundary`, {
@@ -12,13 +11,14 @@ export const getPlacesData = async (type, sw, ne) => {
         tr_latitude: ne.lat,
       },
       headers: {
-        'x-rapidapi-key': '',
+        'x-rapidapi-key': '920612d050mshc9dd9c96ac9f349p1320d0jsn272b2931ec2c',
         'x-rapidapi-host': 'travel-advisor.p.rapidapi.com',
       },
     });
 
     return data;
   } catch (error) {
+    // eslint-disable-next-line
     console.log(error);
   }
 };
@@ -29,7 +29,7 @@ export const getWeatherData = async (lat, lng) => {
       const { data } = await axios.get('https://community-open-weather-map.p.rapidapi.com/find', {
         params: { lat, lon: lng },
         headers: {
-          'x-rapidapi-key': '',
+          'x-rapidapi-key': '920612d050mshc9dd9c96ac9f349p1320d0jsn272b2931ec2c',
           'x-rapidapi-host': 'community-open-weather-map.p.rapidapi.com',
         },
       });
@@ -37,6 +37,7 @@ export const getWeatherData = async (lat, lng) => {
       return data;
     }
   } catch (error) {
+    // eslint-disable-next-line
     console.log(error);
   }
 };
