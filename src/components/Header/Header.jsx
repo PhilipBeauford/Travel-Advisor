@@ -19,10 +19,10 @@ const Header = () => {
           </Typography>
           <Autocomplete>
             <div className={classes.search}>
-              <div className={classes.searchIcon}>
-                <SearchIcon />
-              </div>
-              <InputBase placeholder="Search…" classes={{ root: classes.inputRoot, input: classes.inputInput }} />
+                <div className={classes.searchIcon}>
+                  <SearchIcon />
+                </div>
+                <InputBase placeholder="Search Here…" classes={{ root: classes.inputRoot, input: classes.inputInput }} />
             </div>
           </Autocomplete>
         </Box>
