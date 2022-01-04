@@ -10,7 +10,13 @@ const PlaceDetails = ({ place, selected, refProp }) => {
   const classes = useStyles();
 
   return (
-    <Card elevation={6}>
+    <h1>Place Details</h1>
+  );
+};
+
+
+/*
+<Card elevation={6}>
       <CardMedia
         style={{ height: 350 }}
         image={place.photo ? place.photo.images.large.url : 'https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg'}
@@ -64,7 +70,4 @@ const PlaceDetails = ({ place, selected, refProp }) => {
         </Button>
       </CardActions>
     </Card>
-  );
-};
-
-export default PlaceDetails;
+    */
